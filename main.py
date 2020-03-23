@@ -11,3 +11,7 @@ def main():
     my_restaurant = restaurant.Restaurant()
 
     my_simulation = simulate.Simulate(my_restaurant)
+    my_simulation.run()
+
+
+main()

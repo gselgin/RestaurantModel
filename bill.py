@@ -2,15 +2,27 @@
 # Last Updated: 3/23/20
 # Bill to be used in the restaurant model
 
+import patron
+import dish
+
+
+# # Calculates the total price of the bill
+# def get_total(dishes):
+#     total = 0
+#     for d in dishes:
+#         total += d.get_price()
+#     return total
+
 
 class Bill:
     # Construct a bill
     # When bill is constructed it is unpaid and has no payment type
-    def _init_(self, patron, dishes):
-        self.patron = patron
-        self.dishes = dishes
+    def _init_(self, p):
+        self.patron = p
+        self.dishes = list()
         self.is_paid = False
         self.payment_type = None
+        #self.total = get_total(self.dishes)
 
     # Getters return patron and dishes on the bill
     def get_patron(self):
@@ -23,4 +35,3 @@ class Bill:
     def set_paid(self, payment_type):
         self.is_paid = True
         self.payment_type = payment_type
-
