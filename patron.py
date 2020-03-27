@@ -1,8 +1,6 @@
 # Greg Elgin
-# Last Updated: 3/23/20
+# Last Updated: 3/27/20
 # Patron to be used in the restaurant model
-
-import bill
 
 
 class Patron:
